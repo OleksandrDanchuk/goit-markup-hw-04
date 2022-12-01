@@ -51,6 +51,21 @@ a {
   padding: 0;
 }
 
+/* приховані заголовки */
+.hidd {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 /* HEADER */
 .page-header {
   border: 1px solid #ececec;
@@ -153,7 +168,7 @@ a {
   align-items: center;
 }
 
-/*   MAIN  */
+/* MAIN */
 .hero {
   height: 600px;
   max-width: 1600px;
@@ -203,6 +218,7 @@ a {
   min-width: 216px;
 }
 
+/* features */
 .features {
   padding-bottom: 94px;
   padding-top: 94px;
@@ -264,6 +280,7 @@ a {
   letter-spacing: 0.03em;
 }
 
+/* chym my zajmajemos */
 .whatwedo {
   padding-bottom: 94px;
 }
@@ -293,6 +310,7 @@ a {
   min-width: 366px;
 }
 
+/* nasha komanda */
 .team {
   background-color: var(--backgr-gray-color);
   padding-bottom: 94px;
@@ -390,8 +408,58 @@ a {
   background-color: var(--accent-color);
 }
 
-/* footer */
+/* nashi klijenty */
+.clients {
+  padding-bottom: 94px;
+}
 
+.our-clients {
+  margin-top: 0;
+  margin-bottom: 50px;
+  min-width: 264px;
+  padding-top: 94px;
+  color: var(--title-text-color);
+  font-size: 36px;
+  line-height: calc(42 / 36);
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+.clients-list {
+  display: flex;
+  flex-wrap: wrap;
+  flex-basis: calc((100% - 150px) / 6);
+  margin: 0;
+  padding: 0;
+}
+
+.client-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.client-link {
+  display: flex;
+  width: 170px;
+  height: 92px;
+  align-items: center;
+  justify-content: center;
+  color: #afb1b8;
+  background-color: var(--white-text-color);
+  border: 1px solid #afb1b8;
+}
+
+.client-link:hover {
+  color: var(--accent-color);
+  border-color: var(--accent-color);
+}
+
+.icon-logo {
+  fill: currentColor;
+  width: 106px;
+  height: 160px;
+}
+
+/* footer */
 .footer {
   background-color: var(--backgr-dark-color);
   padding-top: 60px;
@@ -431,6 +499,57 @@ a {
   color: var(--accent-color);
 }
 
+/* socials-footer */
+.footer-container {
+  display: flex;
+  align-items: baseline;
+}
+
+.footer-adress {
+  display: inline-block;
+  margin-right: 70px;
+}
+
+.list-soc {
+  display: flex;
+}
+
+.title-soc {
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--white-text-color);
+  margin-bottom: 20px;
+}
+
+.footer-soc {
+  display: inline-block;
+}
+
+.list-soc .team-soc-link {
+  display: flex;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: var(--white-text-color);
+}
+
+.team-soc-link:hover {
+  color: var(--white-text-color);
+  background-color: var(--accent-color);
+}
+
+.list-soc .team-soc-icon {
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
+  align-items: center;
+  justify-content: center;
+}
 /* Portfolio */
 .team-projects {
   padding-bottom: 94px;
@@ -465,6 +584,9 @@ a {
 .filter .btn:active {
   color: var(--white-text-color);
   background-color: var(--accent-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
 }
 
 .filter .btn.current {
@@ -518,17 +640,7 @@ a {
   border: 1px solid #eeeeee;
 }
 
-/* приховані заголовки */
-.hidd {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-
-  white-space: nowrap;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
+.projects-item:hover {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
