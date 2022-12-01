@@ -280,7 +280,7 @@ a {
   letter-spacing: 0.03em;
 }
 
-/* chym my zajmajemos */
+/* Чим ми займаємось */
 .whatwedo {
   padding-bottom: 94px;
 }
@@ -310,7 +310,7 @@ a {
   min-width: 366px;
 }
 
-/* nasha komanda */
+/* Наша команда */
 .team {
   background-color: var(--backgr-gray-color);
   padding-bottom: 94px;
@@ -403,12 +403,13 @@ a {
   justify-content: center;
 }
 
-.team-soc-link:hover {
+.team-soc-link:hover,
+.team-soc-link:focus {
   color: var(--white-text-color);
   background-color: var(--accent-color);
 }
 
-/* nashi klijenty */
+/* Наші клієнти */
 .clients {
   padding-bottom: 94px;
 }
@@ -448,7 +449,8 @@ a {
   border: 1px solid #afb1b8;
 }
 
-.client-link:hover {
+.client-link:hover,
+.client-link:focus {
   color: var(--accent-color);
   border-color: var(--accent-color);
 }
@@ -538,7 +540,8 @@ a {
   color: var(--white-text-color);
 }
 
-.team-soc-link:hover {
+.team-soc-link:hover,
+.team-soc-link:focus {
   color: var(--white-text-color);
   background-color: var(--accent-color);
 }
